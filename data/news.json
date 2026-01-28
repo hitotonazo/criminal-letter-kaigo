@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-01-10",
+    "category": "日常の風景",
+    "title": "近隣公園へ外出レクリエーション",
+    "excerpt": "冬の澄んだ空気の中で、みなさんとゆっくりお散歩。安全第一で交通ルールも確認しました。",
+    "image": "assets/img/news/news-1.svg",
+    "url": "pages/news-20260110.html"
+  },
+  {
+    "date": "2026-01-03",
+    "category": "お知らせ",
+    "title": "新年のごあいさつ",
+    "excerpt": "本年も、安心して過ごせる居場所づくりに努めてまいります。どうぞよろしくお願いいたします。",
+    "image": "assets/img/news/news-2.svg",
+    "url": "pages/news-20260103.html"
+  },
+  {
+    "date": "2025-12-11",
+    "category": "採用情報",
+    "title": "【募集終了】介護スタッフ（非常勤）",
+    "excerpt": "たくさんのご応募ありがとうございました。次回募集の際は改めてお知らせいたします。",
+    "image": "assets/img/news/news-3.svg",
+    "url": "pages/news-20251211.html"
+  }
+]
