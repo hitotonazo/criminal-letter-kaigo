@@ -1,26 +1,26 @@
 [
   {
-    "date": "2026-01-10",
+    "date": "2026-01-20",
     "category": "日常の風景",
-    "title": "近隣公園へ外出レクリエーション",
-    "excerpt": "冬の澄んだ空気の中で、みなさんとゆっくりお散歩。安全第一で交通ルールも確認しました。",
-    "image": "assets/img/news/news-1.svg",
-    "url": "pages/news-20260110.html"
+    "title": "図書室で「冬の読書週間」をはじめました",
+    "excerpt": "子どもたちが選んだおすすめ本を、図書室の棚に“推し札”として並べています。",
+    "image": "/assets/img/news/news1.svg",
+    "url": "/pages/news-20260120.html"
   },
   {
-    "date": "2026-01-03",
+    "date": "2026-01-08",
     "category": "お知らせ",
-    "title": "新年のごあいさつ",
-    "excerpt": "本年も、安心して過ごせる居場所づくりに努めてまいります。どうぞよろしくお願いいたします。",
-    "image": "assets/img/news/news-2.svg",
-    "url": "pages/news-20260103.html"
+    "title": "ボランティア説明会（2月開催）のお知らせ",
+    "excerpt": "施設見学と活動内容の説明を行います。継続参加できる方を歓迎します。",
+    "image": "/assets/img/news/news2.svg",
+    "url": "/pages/news-20260108.html"
   },
   {
-    "date": "2025-12-11",
+    "date": "2025-12-15",
     "category": "採用情報",
-    "title": "【募集終了】介護スタッフ（非常勤）",
-    "excerpt": "たくさんのご応募ありがとうございました。次回募集の際は改めてお知らせいたします。",
-    "image": "assets/img/news/news-3.svg",
-    "url": "pages/news-20251211.html"
+    "title": "児童指導員（常勤）募集のお知らせ",
+    "excerpt": "子どもの生活に寄り添う支援を一緒に行ってくださる方を募集します。",
+    "image": "/assets/img/news/news3.svg",
+    "url": "/pages/news-20251215.html"
   }
 ]

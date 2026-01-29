@@ -2,228 +2,215 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Language" content="ja">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f2e8">
   <meta name="format-detection" content="telephone=no">
-  <title>星美ケアホーム | 老人福祉施設（サンプル）</title>
-  <meta name="description" content="星美ケアホームの公式サイト（サンプル）。施設紹介、サービス、お知らせ、採用情報など。">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="theme-color" content="#f08a24">
+  <meta name="description" content="児童養護施設の公式サイト">
+  <title>陽だまり学園 | トップ</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/assets/css/style.css?v=1">
 </head>
-
-<body class="grid-bg">
-  <a class="skip-link" href="#main">本文へスキップ</a>
-  <header class="topbar">
-  <div class="container inner">
-    <a class="brand" href="/index.html" aria-label="星美ケアホーム トップへ">
-      <img src="/assets/img/icons/logo-mark.svg" alt="">
-      <div>
-        <div>星美ケアホーム</div>
-        <small>老人福祉施設（サンプル）</small>
+<body>
+<header class="topbar">
+  <a class="skip" href="#main">本文へスキップ</a>
+  <div class="container nav">
+    <a class="brand" href="/">
+      <img id="logo" src="/assets/img/icons/logo.svg" alt="ロゴ">
+      <div class="meta">
+        <div id="orgLine" class="org">社会福祉法人</div>
+        <div id="siteName" class="name">児童養護施設</div>
       </div>
     </a>
 
-    <nav class="nav" aria-label="グローバルナビゲーション">
-      <a href="/index.html" style='text-decoration:underline; text-underline-offset:6px;'>トップ</a>
-      <a href="/pages/about.html" >施設紹介</a>
-      <a href="/pages/services.html" >サービス</a>
-      <a href="/pages/volunteer.html" >ボランティア</a>
-      <a href="/pages/donate.html" >寄付のご案内</a>
-      <a href="/pages/contact.html" >お問い合わせ</a>
+    <nav class="navlinks" aria-label="グローバルナビ">
+      <a data-nav href="/">トップ</a>
+      <a data-nav href="/pages/about.html">施設について</a>
+      <a data-nav href="/pages/life.html">生活と支援</a>
+      <a data-nav href="/pages/library.html">図書室</a>
+      <a data-nav href="/pages/volunteer.html">ボランティア</a>
+      <a data-nav href="/pages/donate.html">寄付のご案内</a>
+      <a data-nav href="/pages/contact.html">お問い合わせ</a>
     </nav>
 
-    <div class="cta">
+    <div class="navcta">
       <a class="btn primary" href="/pages/recruit.html">採用情報</a>
-      <button class="menu-btn" id="menuBtn" aria-label="メニューを開く">
-        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      <button id="burger" class="burger" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-</header>
 
-<div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
-  <div class="drawer-panel" role="dialog" aria-label="メニュー">
-    <div class="drawer-head">
-      <div class="brand" style="gap:10px">
-        <img src="/assets/img/icons/logo-mark.svg" alt="">
-        <div style="font-weight:900">星美ケアホーム</div>
-      </div>
-      <button class="btn" id="drawerClose" type="button">閉じる</button>
-    </div>
-    <nav aria-label="モバイルメニュー">
-      <a href="/index.html">トップ</a>
-      <a href="/pages/about.html">施設紹介</a>
-      <a href="/pages/services.html">サービス</a>
-      <a href="/pages/volunteer.html">ボランティア</a>
-      <a href="/pages/donate.html">寄付のご案内</a>
-      <a href="/pages/contact.html">お問い合わせ</a>
-      <a href="/pages/recruit.html">採用情報</a>
-    </nav>
-    <div class="drawer-actions">
-      <a class="btn primary" href="/pages/contact.html" style="flex:1">見学を申し込む</a>
-      <a class="btn" href="/pages/services.html" style="flex:1">サービスを見る</a>
-    </div>
-    <p class="notice" style="margin-top:16px">このサイトはテンプレートです。文章・画像は差し替えてお使いください。</p>
+  <div id="mobileMenu" class="mobileMenu" aria-label="モバイルメニュー">
+    <a href="/">トップ</a>
+    <a href="/pages/about.html">施設について</a>
+    <a href="/pages/life.html">生活と支援</a>
+    <a href="/pages/library.html">図書室</a>
+    <a href="/pages/volunteer.html">ボランティア</a>
+    <a href="/pages/donate.html">寄付のご案内</a>
+    <a href="/pages/contact.html">お問い合わせ</a>
+    <a href="/pages/recruit.html">採用情報</a>
   </div>
-</div>
-
-  <main id="main">
-    <section class="hero">
-      <div class="container">
-        <div class="panel">
-          <img class="hero-img" src="/assets/img/hero/hero.svg" alt="施設のイメージ写真（差し替え用）">
-          <div class="overlay" aria-hidden="true"></div>
-          <div class="content">
-            <div>
-              <div class="badges" aria-label="特徴">
-                <span class="badge">24時間見守り</span>
-                <span class="badge">リハビリ支援</span>
-                <span class="badge">医療連携</span>
-              </div>
-              <h1>安心とぬくもりのある暮らしを。</h1>
-              <p>
-                星美ケアホームは、日々の暮らしを「安全」「快適」「その人らしさ」で支える介護施設です。<br>
-                見学・ご相談はお気軽にどうぞ。
-              </p>
-              <div style="display:flex; gap:10px; flex-wrap:wrap;">
-                <a class="btn primary" href="/pages/contact.html">見学を申し込む</a>
-                <a class="btn" href="/pages/services.html">サービスを見る</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-col">
-        <div>
-          <div class="kicker"><span>施設の理念</span></div>
-          <h2 style="margin-top:10px;">「安心できる日常」を、ていねいに。</h2>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="container">
+    <div class="heroCard">
+      <div class="heroTop">
+        <div class="heroText">
+          <div class="kicker">児童養護施設</div>
+          <h1 class="h1"><span id="tagline">子どもが安心して「帰れる」場所を。</span></h1>
           <p class="lead">
-            ご本人の生活リズムを大切にしながら、介護・看護・リハビリが連携してサポートします。
-            小さな変化に気づき、寄り添い、家族のような距離感で支援することを目指します。
+            <strong>陽だまり学園</strong>は、児童福祉法に基づく児童養護施設です。<br>
+            生活の場としての「安心」と、学び・体験・人とのつながりを通じて、子どもたちの自立を支えます。
           </p>
-
-          <div class="cards" style="margin-top:16px;">
-            <div class="card" style="grid-column: span 6;">
-              <div class="pad">
-                <h3>生活支援</h3>
-                <p>食事・入浴・排泄など、日常生活を無理なく支援します。</p>
-                <div class="meta"><span class="pill orange">個別ケア</span><span class="pill">相談無料</span></div>
-              </div>
-            </div>
-            <div class="card" style="grid-column: span 6;">
-              <div class="pad">
-                <h3>健康管理</h3>
-                <p>協力医療機関と連携し、体調変化の早期発見に努めます。</p>
-                <div class="meta"><span class="pill orange">医療連携</span><span class="pill">服薬管理</span></div>
-              </div>
-            </div>
+          <div class="heroActions">
+            <a class="btn primary" href="/pages/about.html">施設について</a>
+            <a class="btn ghost" href="/pages/contact.html">お問い合わせ</a>
           </div>
         </div>
-
-        <div class="round-visual" aria-label="写真ギャラリー">
-          <div class="blob" aria-hidden="true"></div>
-          <div class="stack">
-            <img src="/assets/img/gallery/gallery-1.svg" alt="施設内の様子（差し替え用）">
-            <img src="/assets/img/gallery/gallery-2.svg" alt="レクリエーションの様子（差し替え用）">
-            <img class="big" src="/assets/img/gallery/gallery-3.svg" alt="スタッフと利用者の交流（差し替え用）">
-          </div>
+        <div class="heroImg" aria-hidden="true">
+          <img id="heroImg" src="/assets/img/hero/hero.svg" alt="">
         </div>
       </div>
-    </section>
+      <div class="ribbon"></div>
+    </div>
+  </div>
+</section>
 
-    <section class="section events">
-      <div class="container">
-        <div class="head">
-          <div>
-            <div class="kicker"><span>年間行事</span></div>
-            <p class="lead">季節に合わせて、楽しみながら心身の活性化につながる行事を企画しています。</p>
-          </div>
-          <a class="btn" href="/pages/services.html">もっと見る</a>
-        </div>
-        <div class="grid" id="eventsGrid" aria-label="年間行事一覧">
-          <!-- JSで data/events.json を読み込み -->
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="head">
-          <div>
-            <div class="kicker"><span>お知らせ</span></div>
-            <p class="lead">日々の様子やお知らせを更新しています。</p>
-          </div>
-          <a class="btn" href="/pages/news.html">一覧を見る</a>
-        </div>
-
-        <div class="news-grid" id="newsGrid" aria-label="お知らせ一覧">
-          <!-- JSで data/news.json を読み込み -->
-        </div>
-
-        <div style="display:flex; justify-content:center; margin-top:18px;">
-          <a class="btn primary" href="/pages/news.html">続きを見る</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container social">
-        <div>
-          <div class="kicker"><span>日常の様子を更新中</span></div>
-          <p class="lead">SNS（サンプル）でも、日々の活動を発信しています。</p>
-          <p class="notice">※アイコンリンク先はダミーです。運用時は実URLに差し替えてください。</p>
-        </div>
-        <div class="icons" aria-label="SNSリンク">
-          <a class="icon" href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zm0 7.3A2.8 2.8 0 1 1 14.8 13 2.8 2.8 0 0 1 12 15.8zM17.8 6.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg>
-          </a>
-          <a class="icon" href="#" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.9.3-1.5 1.6-1.5h1.8V4.9c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8V11H7v3h2.6v8h3.9z"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="access">
-  <div class="container wrap">
+<section class="section">
+  <div class="container grid2">
     <div>
-      <div class="kicker" style="color:#fff"><span>アクセス</span></div>
-      <p class="small" style="margin-top:10px">
-        〒000-0000 東京都〇〇区〇〇 1-2-3<br>
-        TEL：03-0000-0000　/　FAX：03-0000-0001
+      <h2 class="sectionTitle"><span class="badge"></span>愛されていると感じる環境を。</h2>
+      <p>
+        私たちは、子どもたちの「小さな声」に耳を傾け、日々の暮らしの中で安心できる関係づくりを大切にしています。<br>
+        規則よりもまず生活、叱責よりも対話、評価よりも伴走——そんな方針で支援を行っています。
       </p>
-      <p class="small">
-        ・最寄り駅：〇〇線「〇〇駅」徒歩10分<br>
-        ・送迎：要予約（曜日・時間はご相談ください）
+      <div class="card" style="margin-top:18px;">
+        <h3 style="margin:0 0 8px;">40〜50年以上前から続く歩み</h3>
+        <p style="margin:0;">
+          当施設の前身となる取り組みは、地域の子どもたちの居場所づくりから始まりました。長い年月の中で形を変えながら、
+          いまも「暮らしの安心」を支える場として続いています。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="circleStack" aria-label="写真エリア（差し替え可）">
+        <div class="circle"><img src="/assets/img/gallery/circle1.svg" alt="生活の様子（差し替え）"></div>
+        <div class="circle small"><img src="/assets/img/gallery/circle2.svg" alt="学びの様子（差し替え）"></div>
+        <div class="circle small"><img src="/assets/img/gallery/circle3.svg" alt="行事の様子（差し替え）"></div>
+      </div>
+      <p style="margin:8px 0 0; text-align:center;">
+        画像は <code>/assets/img/gallery/</code> に追加して差し替えできます。
       </p>
-      <div class="footer links" style="text-align:left; justify-content:flex-start;">
-        <a href="/index.html">トップ</a>
-        <a href="/pages/about.html">施設紹介</a>
-        <a href="/pages/services.html">サービス</a>
+    </div>
+  </div>
+</section>
+
+<section class="section orangeBand">
+  <div class="container">
+    <h2 class="sectionTitle"><span class="badge" style="background:white"></span>年間行事</h2>
+    <p>
+      季節に合わせた行事を通して、成功体験や社会性を育みます。<br>
+      旅行や自然体験、地域交流など、子どもたちが「世界を広げる」機会を大切にしています。
+    </p>
+    <div class="card" style="margin-top:18px;">
+      <div class="timeline" aria-label="行事例">
+        <div class="titem">
+          <div class="year">春</div>
+          <div class="txt">新生活の準備／進級・進学のサポート／地域イベント参加</div>
+        </div>
+        <div class="titem">
+          <div class="year">夏</div>
+          <div class="txt">自然体験・キャンプ／夏祭り／学習支援（夏休み）</div>
+        </div>
+        <div class="titem">
+          <div class="year">秋</div>
+          <div class="txt">文化体験（美術・音楽）／運動会の応援／進路相談会</div>
+        </div>
+        <div class="titem">
+          <div class="year">冬</div>
+          <div class="txt">図書室の読書週間／年末行事／新年の目標づくり</div>
+        </div>
+      </div>
+    </div>
+    <div class="centerRow">
+      <a class="btn ghost" href="/pages/life.html">生活と支援を見る</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="sectionTitle"><span class="badge"></span>お知らせ</h2>
+    <p style="color:var(--muted); margin-top:0;">施設からのお知らせです。</p>
+    <div id="newsCards" class="newsGrid" aria-label="お知らせ一覧"></div>
+    <div class="centerRow">
+      <a class="btn primary" href="/pages/news.html">一覧を見る</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid2">
+    <div class="card">
+      <h2 class="sectionTitle"><span class="badge"></span>日常の様子を更新中</h2>
+      <div class="igBox" aria-label="SNSアイコン">
+        <a class="iconBtn" href="#" aria-label="Instagram（ダミー）">
+          <img src="/assets/img/icons/ig.svg" alt="Instagram">
+        </a>
+        <a class="iconBtn" href="#" aria-label="Facebook（ダミー）">
+          <img src="/assets/img/icons/fb.svg" alt="Facebook">
+        </a>
+      </div>
+      <p style="margin-top:14px;">※SNSリンクは後から差し替えてください。</p>
+    </div>
+
+    <div class="card">
+      <h2 class="sectionTitle"><span class="badge"></span>図書室のある暮らし</h2>
+      <p>
+        当施設には、古くから図書室があります。<br>
+        「静かに気持ちを整える場所」「知りたいを育てる場所」として、子どもたちが自由に立ち寄れるようにしています。
+      </p>
+      <div class="heroActions">
+        <a class="btn primary" href="/pages/library.html">図書室について</a>
+        <a class="btn ghost" href="/pages/volunteer.html">読み聞かせボランティア</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container footerTop">
+    <div class="footerInfo">
+      <h3><span id="siteName2">陽だまり学園</span></h3>
+      <p>
+        <strong>所在地</strong>：<span id="addr">〒000-0000</span><br>
+        <strong>TEL</strong>：<span id="tel">03-0000-0000</span>　
+        <strong>FAX</strong>：<span id="fax">03-0000-0001</span><br>
+        <strong>アクセス</strong>：<span id="access1"></span><br>
+        <span id="access2"></span>
+      </p>
+      <p style="margin-top:10px;"><small>最終更新：<span id="updated"></span></small></p>
+      <p style="margin-top:10px;"><small>※このWebサイトの内容はフィクションであり、実在の人物・団体とは一切関係がありません。</small></p>
+    </div>
+    <div>
+      <div class="footerLinks" aria-label="フッターリンク">
+        <a href="/">トップ</a>
+        <a href="/pages/about.html">施設について</a>
+        <a href="/pages/life.html">生活と支援</a>
+        <a href="/pages/library.html">図書室</a>
+        <a href="/pages/volunteer.html">ボランティア</a>
+        <a href="/pages/donate.html">寄付のご案内</a>
         <a href="/pages/recruit.html">採用情報</a>
         <a href="/pages/contact.html">お問い合わせ</a>
       </div>
     </div>
-
-    <div class="map" aria-label="地図（埋め込み）">
-      <iframe
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Tokyo%20Station&output=embed"
-        title="Google マップ（サンプル）"
-      ></iframe>
-    </div>
   </div>
-  <div class="footer">
-    <div>© 2026 星美ケアホーム. All Rights Reserved.</div>
-    <div style="margin-top:6px">※このWebサイトの内容はサンプルであり、実在の人物・団体とは関係ありません。</div>
+  <div class="footerBottom">
+    Copyright © 児童養護施設 <span id="siteName3">陽だまり学園</span> All Rights Reserved.
   </div>
-</section>
-  </main>
-
-  <script src="/assets/js/main.js"></script>
+</footer>
+<script src="/assets/js/main.js?v=1" defer></script>
 </body>
 </html>

@@ -1,20 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f3f1e7"/>
-      <stop offset="1" stop-color="#ffffff"/>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffe9d1"/>
+      <stop offset="1" stop-color="#e9f6ff"/>
     </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e8e4d7" stroke-width="2"/>
-    </pattern>
   </defs>
-  <rect width="100%" height="100%" fill="url(#g)"/>
-  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.7"/>
-  <circle cx="1248" cy="360" r="144" fill="#c97a2a" opacity="0.18"/>
-  <circle cx="1376" cy="320" r="64" fill="#c97a2a" opacity="0.25"/>
-  <circle cx="1120" cy="440" r="80" fill="#c97a2a" opacity="0.22"/>
-  <text x="60" y="496" font-family="system-ui, -apple-system, Segoe UI, Roboto, 'Noto Sans JP', sans-serif"
-        font-size="48" font-weight="700" fill="#2e2a25">トップイメージ（ヒーロー）</text>
-  <text x="60" y="560" font-family="system-ui, -apple-system, Segoe UI, Roboto, 'Noto Sans JP', sans-serif"
-        font-size="25" fill="#5b544c">画像は差し替え用のプレースホルダーです（/assets/img/ に追加OK）</text>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="900" cy="250" r="170" fill="#f08a24" opacity="0.22"/>
+  <circle cx="980" cy="290" r="90" fill="#69c0ff" opacity="0.20"/>
+  <circle cx="820" cy="330" r="70" fill="#b0df7a" opacity="0.22"/>
+  <rect x="80" y="520" width="1040" height="140" rx="28" fill="#ffffff" opacity="0.78"/>
+  <text x="120" y="585" font-size="42" font-family="system-ui, sans-serif" fill="#2a2a2a" font-weight="800">ここに写真を差し替えてください</text>
+  <text x="120" y="635" font-size="22" font-family="system-ui, sans-serif" fill="#6f6f6f">/assets/img/hero/ に画像を置き、index.html の heroImage を変更</text>
 </svg>

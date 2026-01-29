@@ -1,0 +1,14 @@
+{
+  "siteName": "陽だまり学園",
+  "tagline": "子どもが安心して「帰れる」場所を。",
+  "orgLine": "社会福祉法人 ひかりの里福祉会",
+  "address": "〒000-0000 東京都〇〇区〇〇 1-2-3",
+  "tel": "03-0000-0000",
+  "fax": "03-0000-0001",
+  "access1": "JR〇〇駅 北口より徒歩12分",
+  "access2": "東京メトロ〇〇線 〇〇駅 2番出口より徒歩10分",
+  "email": "info@example.jp",
+  "updated": "2026-01-29",
+  "heroImage": "/assets/img/hero/hero.svg",
+  "logoImage": "/assets/img/icons/logo.svg"
+}

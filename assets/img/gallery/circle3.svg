@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#ffffff"/>
+  <circle cx="400" cy="400" r="360" fill="#e9f6ff"/>
+  <circle cx="470" cy="350" r="170" fill="#f08a24" opacity="0.22"/>
+  <circle cx="330" cy="460" r="140" fill="#b0df7a" opacity="0.22"/>
+  <text x="130" y="430" font-size="40" font-family="system-ui, sans-serif" fill="#2a2a2a" font-weight="900">差し替え画像</text>
+  <text x="130" y="480" font-size="22" font-family="system-ui, sans-serif" fill="#6f6f6f">/assets/img/gallery/</text>
+</svg>

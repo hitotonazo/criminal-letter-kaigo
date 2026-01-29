@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#f08a24">
   <meta name="description" content="児童養護施設の公式サイト">
-  <title>陽だまり学園 | お知らせ</title>
+  <title>陽だまり学園 | 図書室</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="/assets/css/style.css?v=1">
 </head>
@@ -54,44 +54,54 @@
 <main id="main">
 <section class="pageHeader">
   <div class="container">
-    <div class="breadcrumb"><a href="/">トップ</a> / お知らせ</div>
-    <h1 class="pageTitle">お知らせ</h1>
+    <div class="breadcrumb"><a href="/">トップ</a> / 図書室</div>
+    <h1 class="pageTitle">図書室</h1>
   </div>
 </section>
 
 <section class="section" style="padding-top:10px;">
-  <div class="container">
+  <div class="container grid2">
     <div class="article">
-      <p class="meta">最新3件はトップにも表示されます。追加は <code>/data/news.json</code> と <code>/pages/news-YYYYMMDD.html</code> を編集してください。</p>
-      <div id="newsAll" class="newsGrid"></div>
+      <h2>古くからある図書室</h2>
+      <p>
+        陽だまり学園には、古くから図書室があります。<br>
+        読書は、言葉で気持ちを整理したり、知らない世界に出会ったりする大切な機会です。
+      </p>
+
+      <h2>図書室の使い方（例）</h2>
+      <ul>
+        <li>放課後や休日に自由に利用</li>
+        <li>おすすめ本の紹介コーナー</li>
+        <li>静かに過ごしたい子の“避難先”としても活用</li>
+      </ul>
+
+      <h2>読書活動</h2>
+      <p>
+        年数回、読書週間を設けています。読み聞かせや“推し本”の共有など、子どもが主体となる企画も行います。
+      </p>
+    </div>
+
+    <div class="article">
+      <h2>ご寄贈・ボランティア</h2>
+      <p>
+        図書のご寄贈や、読み聞かせボランティアを歓迎しています。<br>
+        状態・ジャンルの偏り・保管スペース等の都合がありますので、事前にご相談ください。
+      </p>
+
+      <h2>お願い（例）</h2>
+      <ul>
+        <li>新品または状態の良い本（破れ・書き込みのないもの）</li>
+        <li>年齢に合った内容（絵本〜YAまで）</li>
+        <li>個人情報が残らない形での寄贈</li>
+      </ul>
+
+      <div class="heroActions">
+        <a class="btn primary" href="/pages/contact.html">相談する</a>
+        <a class="btn ghost" href="/pages/volunteer.html">ボランティアを見る</a>
+      </div>
     </div>
   </div>
 </section>
-
-<script>
-document.addEventListener("DOMContentLoaded", async ()=>{
-  try{
-    const news = await (await fetch("/data/news.json",{cache:"no-store"})).json();
-    const root = document.getElementById("newsAll");
-    if(!root) return;
-    root.innerHTML="";
-    news.forEach(item=>{
-      const a=document.createElement("a");
-      a.className="newsCard";
-      a.href=item.url;
-      a.innerHTML=`
-        <img src="${item.image}" alt="">
-        <div class="newsBody">
-          <span class="pill">${item.category}</span>
-          <div class="newsTitle">${item.title}</div>
-          <div class="newsMeta"><span>${item.date.replace(/-/g,'年').replace(/年(\d{2})年(\d{2})$/,'年$1月$2日')}</span></div>
-          <div class="newsExcerpt">${item.excerpt}</div>
-        </div>`;
-      root.appendChild(a);
-    });
-  }catch(e){ console.error(e); }
-});
-</script>
 </main>
 <footer class="footer" role="contentinfo">
   <div class="container footerTop">

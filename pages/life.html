@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#f08a24">
   <meta name="description" content="児童養護施設の公式サイト">
-  <title>陽だまり学園 | お知らせ</title>
+  <title>陽だまり学園 | 生活と支援</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="/assets/css/style.css?v=1">
 </head>
@@ -54,44 +54,54 @@
 <main id="main">
 <section class="pageHeader">
   <div class="container">
-    <div class="breadcrumb"><a href="/">トップ</a> / お知らせ</div>
-    <h1 class="pageTitle">お知らせ</h1>
+    <div class="breadcrumb"><a href="/">トップ</a> / 生活と支援</div>
+    <h1 class="pageTitle">生活と支援</h1>
   </div>
 </section>
 
 <section class="section" style="padding-top:10px;">
-  <div class="container">
+  <div class="container grid2">
     <div class="article">
-      <p class="meta">最新3件はトップにも表示されます。追加は <code>/data/news.json</code> と <code>/pages/news-YYYYMMDD.html</code> を編集してください。</p>
-      <div id="newsAll" class="newsGrid"></div>
+      <h2>生活のリズム</h2>
+      <p>
+        起床・食事・登校・帰宅・学習・入浴・就寝——日々のリズムを整えることは、安心の土台になります。<br>
+        子ども一人ひとりの状況に合わせて、無理なく生活を組み立てます。
+      </p>
+
+      <h2>学習・進路支援</h2>
+      <p>
+        学校の学習だけでなく、進路選択（高校・大学・就職）に向けた相談や、必要に応じた外部支援の紹介を行います。
+      </p>
+
+      <h2>体験活動</h2>
+      <p>
+        行事・旅行・地域交流などの体験は、自己肯定感や社会性につながります。小さな成功体験を重ねられるよう計画しています。
+      </p>
+    </div>
+
+    <div class="article">
+      <h2>相談できる環境</h2>
+      <p>
+        「話したいときに話せる」ことが大切です。<br>
+        日々の関わりの中で信頼関係を築き、必要なときには専門機関とも連携します。
+      </p>
+
+      <h2>安全への配慮</h2>
+      <ul>
+        <li>個人情報保護・写真掲載のルール整備</li>
+        <li>来訪者対応（受付・面会の手順）</li>
+        <li>夜間体制・緊急時の連絡網</li>
+      </ul>
+
+      <h2>関連ページ</h2>
+      <ul>
+        <li><a href="/pages/library.html">図書室について</a></li>
+        <li><a href="/pages/volunteer.html">ボランティア</a></li>
+        <li><a href="/pages/donate.html">寄付のご案内</a></li>
+      </ul>
     </div>
   </div>
 </section>
-
-<script>
-document.addEventListener("DOMContentLoaded", async ()=>{
-  try{
-    const news = await (await fetch("/data/news.json",{cache:"no-store"})).json();
-    const root = document.getElementById("newsAll");
-    if(!root) return;
-    root.innerHTML="";
-    news.forEach(item=>{
-      const a=document.createElement("a");
-      a.className="newsCard";
-      a.href=item.url;
-      a.innerHTML=`
-        <img src="${item.image}" alt="">
-        <div class="newsBody">
-          <span class="pill">${item.category}</span>
-          <div class="newsTitle">${item.title}</div>
-          <div class="newsMeta"><span>${item.date.replace(/-/g,'年').replace(/年(\d{2})年(\d{2})$/,'年$1月$2日')}</span></div>
-          <div class="newsExcerpt">${item.excerpt}</div>
-        </div>`;
-      root.appendChild(a);
-    });
-  }catch(e){ console.error(e); }
-});
-</script>
 </main>
 <footer class="footer" role="contentinfo">
   <div class="container footerTop">

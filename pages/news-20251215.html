@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#f08a24">
   <meta name="description" content="児童養護施設の公式サイト">
-  <title>陽だまり学園 | お知らせ</title>
+  <title>陽だまり学園 | 児童指導員（常勤）募集のお知らせ</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="/assets/css/style.css?v=1">
 </head>
@@ -54,44 +54,34 @@
 <main id="main">
 <section class="pageHeader">
   <div class="container">
-    <div class="breadcrumb"><a href="/">トップ</a> / お知らせ</div>
-    <h1 class="pageTitle">お知らせ</h1>
+    <div class="breadcrumb"><a href="/">トップ</a> / <a href="/pages/news.html">お知らせ</a> / 記事</div>
+    <h1 class="pageTitle">児童指導員（常勤）募集のお知らせ</h1>
   </div>
 </section>
 
 <section class="section" style="padding-top:10px;">
-  <div class="container">
+  <div class="container grid2">
     <div class="article">
-      <p class="meta">最新3件はトップにも表示されます。追加は <code>/data/news.json</code> と <code>/pages/news-YYYYMMDD.html</code> を編集してください。</p>
-      <div id="newsAll" class="newsGrid"></div>
+      <div class="meta">2025-12-15　｜　採用情報</div>
+      <p>子どもの生活に寄り添う支援を一緒に行ってくださる方を募集します。</p>
+      <h2>本文（例）</h2>
+      <p>
+        ここに記事本文を入れてください。<br>
+        写真は <code>/assets/img/news/</code> に追加し、<code>news.json</code> の image を差し替えます。
+      </p>
+      <p>
+        図書室や日常の様子を扱う記事では、子どもたちのプライバシーに配慮し、顔が特定できない写真や、撮影範囲の工夫を行ってください。
+      </p>
+      <div class="heroActions">
+        <a class="btn ghost" href="/pages/news.html">一覧へ戻る</a>
+      </div>
+    </div>
+    <div class="article">
+      <img src="/assets/img/news/news3.svg" alt="記事画像（差し替え）" style="border-radius:18px; border:1px solid rgba(0,0,0,.06);">
+      <p class="meta" style="margin-top:12px;">画像: /assets/img/news/news3.svg</p>
     </div>
   </div>
 </section>
-
-<script>
-document.addEventListener("DOMContentLoaded", async ()=>{
-  try{
-    const news = await (await fetch("/data/news.json",{cache:"no-store"})).json();
-    const root = document.getElementById("newsAll");
-    if(!root) return;
-    root.innerHTML="";
-    news.forEach(item=>{
-      const a=document.createElement("a");
-      a.className="newsCard";
-      a.href=item.url;
-      a.innerHTML=`
-        <img src="${item.image}" alt="">
-        <div class="newsBody">
-          <span class="pill">${item.category}</span>
-          <div class="newsTitle">${item.title}</div>
-          <div class="newsMeta"><span>${item.date.replace(/-/g,'年').replace(/年(\d{2})年(\d{2})$/,'年$1月$2日')}</span></div>
-          <div class="newsExcerpt">${item.excerpt}</div>
-        </div>`;
-      root.appendChild(a);
-    });
-  }catch(e){ console.error(e); }
-});
-</script>
 </main>
 <footer class="footer" role="contentinfo">
   <div class="container footerTop">

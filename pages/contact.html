@@ -2,157 +2,133 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Language" content="ja">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f2e8">
   <meta name="format-detection" content="telephone=no">
-  <title>お問い合わせ | 星美ケアホーム</title>
-  <meta name="description" content="お問い合わせ、見学予約">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="theme-color" content="#f08a24">
+  <meta name="description" content="児童養護施設の公式サイト">
+  <title>陽だまり学園 | お問い合わせ</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/assets/css/style.css?v=1">
 </head>
-<body class="grid-bg">
-  <a class="skip-link" href="#main">本文へスキップ</a>
-  <header class="topbar">
-  <div class="container inner">
-    <a class="brand" href="/index.html" aria-label="星美ケアホーム トップへ">
-      <img src="/assets/img/icons/logo-mark.svg" alt="">
-      <div>
-        <div>星美ケアホーム</div>
-        <small>老人福祉施設（サンプル）</small>
+<body>
+<header class="topbar">
+  <a class="skip" href="#main">本文へスキップ</a>
+  <div class="container nav">
+    <a class="brand" href="/">
+      <img id="logo" src="/assets/img/icons/logo.svg" alt="ロゴ">
+      <div class="meta">
+        <div id="orgLine" class="org">社会福祉法人</div>
+        <div id="siteName" class="name">児童養護施設</div>
       </div>
     </a>
 
-    <nav class="nav" aria-label="グローバルナビゲーション">
-      <a href="/index.html" >トップ</a>
-      <a href="/pages/about.html" >施設紹介</a>
-      <a href="/pages/services.html" >サービス</a>
-      <a href="/pages/volunteer.html" >ボランティア</a>
-      <a href="/pages/donate.html" >寄付のご案内</a>
-      <a href="/pages/contact.html" style='text-decoration:underline; text-underline-offset:6px;'>お問い合わせ</a>
+    <nav class="navlinks" aria-label="グローバルナビ">
+      <a data-nav href="/">トップ</a>
+      <a data-nav href="/pages/about.html">施設について</a>
+      <a data-nav href="/pages/life.html">生活と支援</a>
+      <a data-nav href="/pages/library.html">図書室</a>
+      <a data-nav href="/pages/volunteer.html">ボランティア</a>
+      <a data-nav href="/pages/donate.html">寄付のご案内</a>
+      <a data-nav href="/pages/contact.html">お問い合わせ</a>
     </nav>
 
-    <div class="cta">
+    <div class="navcta">
       <a class="btn primary" href="/pages/recruit.html">採用情報</a>
-      <button class="menu-btn" id="menuBtn" aria-label="メニューを開く">
-        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      <button id="burger" class="burger" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-</header>
 
-<div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
-  <div class="drawer-panel" role="dialog" aria-label="メニュー">
-    <div class="drawer-head">
-      <div class="brand" style="gap:10px">
-        <img src="/assets/img/icons/logo-mark.svg" alt="">
-        <div style="font-weight:900">星美ケアホーム</div>
-      </div>
-      <button class="btn" id="drawerClose" type="button">閉じる</button>
-    </div>
-    <nav aria-label="モバイルメニュー">
-      <a href="/index.html">トップ</a>
-      <a href="/pages/about.html">施設紹介</a>
-      <a href="/pages/services.html">サービス</a>
-      <a href="/pages/volunteer.html">ボランティア</a>
-      <a href="/pages/donate.html">寄付のご案内</a>
-      <a href="/pages/contact.html">お問い合わせ</a>
-      <a href="/pages/recruit.html">採用情報</a>
-    </nav>
-    <div class="drawer-actions">
-      <a class="btn primary" href="/pages/contact.html" style="flex:1">見学を申し込む</a>
-      <a class="btn" href="/pages/services.html" style="flex:1">サービスを見る</a>
-    </div>
-    <p class="notice" style="margin-top:16px">このサイトはテンプレートです。文章・画像は差し替えてお使いください。</p>
+  <div id="mobileMenu" class="mobileMenu" aria-label="モバイルメニュー">
+    <a href="/">トップ</a>
+    <a href="/pages/about.html">施設について</a>
+    <a href="/pages/life.html">生活と支援</a>
+    <a href="/pages/library.html">図書室</a>
+    <a href="/pages/volunteer.html">ボランティア</a>
+    <a href="/pages/donate.html">寄付のご案内</a>
+    <a href="/pages/contact.html">お問い合わせ</a>
+    <a href="/pages/recruit.html">採用情報</a>
   </div>
-</div>
-  <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <div class="box">
-          <div class="breadcrumb"><a href="/index.html">トップ</a> / お問い合わせ</div>
-          <h1>お問い合わせ</h1>
-        </div>
-      </div>
-    </section>
+</header>
+<main id="main">
+<section class="pageHeader">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">トップ</a> / お問い合わせ</div>
+    <h1 class="pageTitle">お問い合わせ</h1>
+  </div>
+</section>
 
-    
-<section class="section">
-  <div class="container two-col">
-    <div>
-      <div class="kicker"><span>お問い合わせ</span></div>
-      <p class="lead">
-        見学希望・入居相談・採用に関するご連絡はこちらから。
-        このテンプレートは静的サイトのため、フォーム送信は「mailto:」で起動します（Cloudflare PagesのFunctionsに置き換え可能）。
+<section class="section" style="padding-top:10px;">
+  <div class="container grid2">
+    <div class="article">
+      <h2>お電話・FAX</h2>
+      <p>
+        TEL：<strong><span id="tel2">03-0000-0000</span></strong><br>
+        FAX：<strong><span id="fax2">03-0000-0001</span></strong>
       </p>
-
-      <div class="card" style="margin-top:14px;">
-        <div class="pad">
-          <h3>電話</h3>
-          <p>TEL：03-0000-0000（平日 9:00–18:00）</p>
-          <div class="meta"><span class="pill orange">見学予約</span><span class="pill">相談無料</span></div>
-        </div>
-      </div>
-
-      <div class="card" style="margin-top:14px;">
-        <div class="pad">
-          <h3>メール</h3>
-          <p>以下のボタンからメールアプリが起動します。</p>
-          <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn primary" href="mailto:info@example.com?subject=%E8%A6%8B%E5%AD%A6%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87&body=%E3%81%94%E7%94%A8%E4%BB%B6%3A%0A%E3%81%8A%E5%90%8D%E5%89%8D%3A%0A%E9%9B%BB%E8%A9%B1%3A%0A%E3%81%94%E8%A6%8B%E5%AD%A6%E5%B8%8C%E6%9C%9B%E6%97%A5%3A%0A%E3%81%9D%E3%81%AE%E4%BB%96%3A">メールで問い合わせる</a>
-            <a class="btn" href="/pages/recruit.html">採用情報を見る</a>
-          </div>
-          <p class="notice" style="margin-top:12px;">※フォームを使いたい場合：Cloudflare Pages Functions（/functions）で受け口を作り、AJAX送信に差し替えできます。</p>
-        </div>
-      </div>
+      <h2>所在地</h2>
+      <p><span id="addr2">〒000-0000 東京都〇〇区〇〇 1-2-3</span></p>
+      <h2>アクセス</h2>
+      <p><span id="access12"></span><br><span id="access22"></span></p>
     </div>
 
-    <div class="card">
-      <img src="/assets/img/gallery/gallery-1.svg" alt="相談のイメージ（差し替え用）">
-      <div class="pad">
-        <h3>よくあるご相談</h3>
-        <p>・入居までの流れ<br>・必要書類<br>・費用の目安<br>・医療機関との連携</p>
+    <div class="article">
+      <h2>フォーム（ダミー）</h2>
+      <p class="meta">Cloudflare Pages ではフォーム機能がないため、外部フォーム（Googleフォーム等）を埋め込み/リンクしてください。</p>
+      <ul>
+        <li>フォームURL：<code>https://example.com/form</code> に差し替え</li>
+        <li>迷惑行為防止のため、必要に応じて reCAPTCHA 等の導入を検討</li>
+      </ul>
+      <div class="heroActions">
+        <a class="btn primary" href="mailto:info@example.jp">メールを開く</a>
       </div>
     </div>
   </div>
 </section>
 
-
-    <section class="access">
-  <div class="container wrap">
+<script>
+document.addEventListener("DOMContentLoaded", async ()=>{
+  try{
+    const site = await (await fetch("/data/site.json",{cache:"no-store"})).json();
+    const set=(id,v)=>{const el=document.getElementById(id); if(el) el.textContent=v;}
+    set("tel2", site.tel); set("fax2", site.fax); set("addr2", site.address);
+    set("access12", site.access1); set("access22", site.access2);
+  }catch(e){}
+});
+</script>
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container footerTop">
+    <div class="footerInfo">
+      <h3><span id="siteName2">陽だまり学園</span></h3>
+      <p>
+        <strong>所在地</strong>：<span id="addr">〒000-0000</span><br>
+        <strong>TEL</strong>：<span id="tel">03-0000-0000</span>　
+        <strong>FAX</strong>：<span id="fax">03-0000-0001</span><br>
+        <strong>アクセス</strong>：<span id="access1"></span><br>
+        <span id="access2"></span>
+      </p>
+      <p style="margin-top:10px;"><small>最終更新：<span id="updated"></span></small></p>
+      <p style="margin-top:10px;"><small>※このWebサイトの内容はフィクションであり、実在の人物・団体とは一切関係がありません。</small></p>
+    </div>
     <div>
-      <div class="kicker" style="color:#fff"><span>アクセス</span></div>
-      <p class="small" style="margin-top:10px">
-        〒000-0000 東京都〇〇区〇〇 1-2-3<br>
-        TEL：03-0000-0000　/　FAX：03-0000-0001
-      </p>
-      <p class="small">
-        ・最寄り駅：〇〇線「〇〇駅」徒歩10分<br>
-        ・送迎：要予約（曜日・時間はご相談ください）
-      </p>
-      <div class="footer links" style="text-align:left; justify-content:flex-start;">
-        <a href="/index.html">トップ</a>
-        <a href="/pages/about.html">施設紹介</a>
-        <a href="/pages/services.html">サービス</a>
+      <div class="footerLinks" aria-label="フッターリンク">
+        <a href="/">トップ</a>
+        <a href="/pages/about.html">施設について</a>
+        <a href="/pages/life.html">生活と支援</a>
+        <a href="/pages/library.html">図書室</a>
+        <a href="/pages/volunteer.html">ボランティア</a>
+        <a href="/pages/donate.html">寄付のご案内</a>
         <a href="/pages/recruit.html">採用情報</a>
         <a href="/pages/contact.html">お問い合わせ</a>
       </div>
     </div>
-
-    <div class="map" aria-label="地図（埋め込み）">
-      <iframe
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Tokyo%20Station&output=embed"
-        title="Google マップ（サンプル）"
-      ></iframe>
-    </div>
   </div>
-  <div class="footer">
-    <div>© 2026 星美ケアホーム. All Rights Reserved.</div>
-    <div style="margin-top:6px">※このWebサイトの内容はサンプルであり、実在の人物・団体とは関係ありません。</div>
+  <div class="footerBottom">
+    Copyright © 児童養護施設 <span id="siteName3">陽だまり学園</span> All Rights Reserved.
   </div>
-</section>
-  </main>
-  <script src="/assets/js/main.js"></script>
+</footer>
+<script src="/assets/js/main.js?v=1" defer></script>
 </body>
 </html>
