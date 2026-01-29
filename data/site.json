@@ -10,6 +10,6 @@
   "email": "info@example.jp",
   "updated": "2026-01-29",
   "mediaBaseUrl": "/media",
-  "logoKey": "icons/logo.svg",
-  "heroKey": "hero/hero.svg"
+  "logoKey": "icons/logo.png",
+  "heroKey": "hero/hero.png"
 }

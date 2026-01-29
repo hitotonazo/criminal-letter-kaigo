@@ -18,14 +18,14 @@ HTML/CSS/JS は GitHub から Pages にデプロイし、**画像は R2（オブ
 2. バケット名（例: `jido-yogo-media`）を作成
 
 ### B. 画像アップロード
-- 本ZIPには `seed-media/` が同梱されています。
-- **`seed-media/` の中身（icons/ hero/ gallery/ news/）を、そのまま R2 バケットのルートにアップロード**してください。
+- 本ZIPには `media-src/` が同梱されています。
+- **`media-src/` の中身（icons/ hero/ gallery/ news/）を、そのまま R2 バケットのルートにアップロード**してください。
 
 > 例：R2 内のキー  
-> `icons/logo.svg`  
-> `hero/hero.svg`  
-> `gallery/gallery1.svg`  
-> `news/news1.svg` など
+> `icons/logo.png`  
+> `hero/hero.png`  
+> `gallery/gallery1.png`  
+> `news/news1.png` など
 
 ---
 
@@ -49,7 +49,7 @@ GitHub 連携で Pages デプロイしている前提です。
 - `data/site.json` … 施設情報・R2参照設定
 - `data/news.json` … お知らせ（画像キー含む）
 - `functions/media/[...path].js` … `/media/*` → R2 から配信する関数
-- `seed-media/` … **R2 に最初にアップロードするダミー画像一式**
+- `media-src/` … **R2 に最初にアップロードするダミー画像一式**
 
 ---
 
@@ -60,10 +60,10 @@ GitHub 連携で Pages デプロイしている前提です。
 ### 画像のキー（site.json / news.json）
 - `data/site.json`
   - `mediaBaseUrl`: 通常は `"/media"`
-  - `logoKey`: 例 `icons/logo.svg`
-  - `heroKey`: 例 `hero/hero.svg`
+  - `logoKey`: 例 `icons/logo.png`
+  - `heroKey`: 例 `hero/hero.png`
 - `data/news.json`
-  - `imageKey`: 例 `news/news1.svg`
+  - `imageKey`: 例 `news/news1.png`
 
 ---
 
@@ -81,3 +81,33 @@ R2 をまだ用意していない段階で表示確認したい場合は、`data
 ## 6) キャッシュについて
 `/functions/media/[...path].js` は `Cache-Control: public, max-age=31536000, immutable` を付与しています。
 同じキーを頻繁に上書きして差し替える運用なら、`max-age` を短くするか、**ファイル名（キー）を変える**運用をおすすめします。
+
+---
+
+## 画像をR2へ「フォルダごと一括同期」する運用（PNG推奨）
+
+このテンプレでは、ページ内の画像は `/media/<キー>` にアクセスすると、Pages Functions が R2 から読み出して返します。
+そのため、**画像の追加・差し替えは R2 側だけ**でできます。
+
+### 1) 画像を置く場所
+- ローカル: `media-src/` （この中身をR2へ同期）
+- R2のキー: `media-src/` の相対パスがそのままキーになります  
+  例）`media-src/icons/logo.png` → R2キー `icons/logo.png`
+
+### 2) 推奨サイズ（迷ったらこれ）
+- `hero/hero.png` : **1600x720**
+- `gallery/circle*.png` : **600x600**
+- `news/news*.png` : **800x450**
+- `icons/logo.png` : **600x180**（透過推奨）
+- `icons/ig.png`, `icons/fb.png` : **128x128**（透過推奨）
+
+### 3) 一括同期（wrangler）
+`tools/` に同期スクリプトを入れています。
+
+- Mac/Linux: `bash tools/sync-media.sh <R2_BUCKET_NAME>`
+- Windows(PowerShell): `powershell -ExecutionPolicy Bypass -File tools/sync-media.ps1 -Bucket <R2_BUCKET_NAME>`
+
+> 事前に `wrangler login` を済ませてください。
+
+### 4) 画像を増やす
+`media-src/` に PNG を追加 → 同期 → HTML/JSON側では `...Key` にキー（例: `gallery/new1.png`）を設定すればOKです。
