@@ -4,23 +4,23 @@
     "category": "日常の風景",
     "title": "図書室で「冬の読書週間」をはじめました",
     "excerpt": "子どもたちが選んだおすすめ本を、図書室の棚に“推し札”として並べています。",
-    "image": "/assets/img/news/news1.svg",
-    "url": "/pages/news-20260120.html"
+    "url": "/pages/news-20260120.html",
+    "imageKey": "news/news1.svg"
   },
   {
     "date": "2026-01-08",
     "category": "お知らせ",
     "title": "ボランティア説明会（2月開催）のお知らせ",
     "excerpt": "施設見学と活動内容の説明を行います。継続参加できる方を歓迎します。",
-    "image": "/assets/img/news/news2.svg",
-    "url": "/pages/news-20260108.html"
+    "url": "/pages/news-20260108.html",
+    "imageKey": "news/news2.svg"
   },
   {
     "date": "2025-12-15",
     "category": "採用情報",
     "title": "児童指導員（常勤）募集のお知らせ",
     "excerpt": "子どもの生活に寄り添う支援を一緒に行ってくださる方を募集します。",
-    "image": "/assets/img/news/news3.svg",
-    "url": "/pages/news-20251215.html"
+    "url": "/pages/news-20251215.html",
+    "imageKey": "news/news3.svg"
   }
 ]

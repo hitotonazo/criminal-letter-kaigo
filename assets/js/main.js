@@ -4,6 +4,14 @@ async function loadJSON(path){
   return await res.json();
 }
 
+function mediaUrl(base, key){
+  if(!key) return "";
+  // Avoid double slashes
+  const b = (base || "").replace(/\/$/, "");
+  const k = String(key).replace(/^\//, "");
+  return `${b}/${k}`;
+}
+
 function $(sel, root=document){ return root.querySelector(sel); }
 function $all(sel, root=document){ return [...root.querySelectorAll(sel)]; }
 
@@ -27,7 +35,7 @@ function buildNews(cardsRoot, items){
     a.className = "newsCard";
     a.href = item.url;
     a.innerHTML = `
-      <img src="${item.image}" alt="">
+      <img src="${mediaUrl(window.__MEDIA_BASE__, item.imageKey)}" alt="">
       <div class="newsBody">
         <span class="pill">${item.category}</span>
         <div class="newsTitle">${item.title}</div>
@@ -58,6 +66,7 @@ async function init(){
 
   // Load site config
   const site = await loadJSON("/data/site.json");
+  window.__MEDIA_BASE__ = site.mediaBaseUrl || "/media";
   setText($("#siteName"), site.siteName);
   setText($("#siteName2"), site.siteName);
   setText($("#tagline"), site.tagline);
@@ -70,10 +79,10 @@ async function init(){
   setText($("#updated"), site.updated);
 
   const logo = $("#logo");
-  if(logo) logo.src = site.logoImage;
+  if(logo) logo.src = mediaUrl(window.__MEDIA_BASE__, site.logoKey);
 
   const hero = $("#heroImg");
-  if(hero) hero.src = site.heroImage;
+  if(hero) hero.src = mediaUrl(window.__MEDIA_BASE__, site.heroKey);
 
   // Load news
   const news = await loadJSON("/data/news.json");

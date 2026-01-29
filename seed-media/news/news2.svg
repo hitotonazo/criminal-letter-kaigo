@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="800" fill="#f6f6f0"/>
+  <rect x="70" y="90" width="1060" height="620" rx="28" fill="#ffffff" stroke="#e7e2db"/>
+  <text x="120" y="210" font-size="54" font-family="system-ui, sans-serif" fill="#f08a24" font-weight="900">NEWS 2</text>
+  <text x="120" y="290" font-size="26" font-family="system-ui, sans-serif" fill="#6f6f6f">画像差し替え先: /assets/img/news/</text>
+  <text x="120" y="360" font-size="22" font-family="system-ui, sans-serif" fill="#6f6f6f">news.json の image を変更してください</text>
+</svg>

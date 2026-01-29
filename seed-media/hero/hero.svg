@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffe9d1"/>
+      <stop offset="1" stop-color="#e9f6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="900" cy="250" r="170" fill="#f08a24" opacity="0.22"/>
+  <circle cx="980" cy="290" r="90" fill="#69c0ff" opacity="0.20"/>
+  <circle cx="820" cy="330" r="70" fill="#b0df7a" opacity="0.22"/>
+  <rect x="80" y="520" width="1040" height="140" rx="28" fill="#ffffff" opacity="0.78"/>
+  <text x="120" y="585" font-size="42" font-family="system-ui, sans-serif" fill="#2a2a2a" font-weight="800">ここに写真を差し替えてください</text>
+  <text x="120" y="635" font-size="22" font-family="system-ui, sans-serif" fill="#6f6f6f">/assets/img/hero/ に画像を置き、index.html の heroImage を変更</text>
+</svg>
