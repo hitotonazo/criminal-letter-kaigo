@@ -13,3 +13,21 @@
 ## ルール
 - 形式は PNG 推奨（透過が必要なら PNG）
 - 差し替えは「同じキーで上書き」でもOKですが、反映が遅い場合はファイル名を変えて data/*.json を更新すると確実です。
+
+## 追加した画像（今回）
+### トップ：年間行事（4枚）
+- `events/spring.png`（推奨 800×450）
+- `events/summer.png`（推奨 800×450）
+- `events/autumn.png`（推奨 800×450）
+- `events/winter.png`（推奨 800×450）
+
+### 子ページ：ヘッダー画像（各1枚）
+- `pages/about.png`（推奨 1600×720）
+- `pages/life.png`（推奨 1600×720）
+- `pages/library.png`（推奨 1600×720）
+- `pages/volunteer.png`（推奨 1600×720）
+- `pages/donate.png`（推奨 1600×720）
+
+### SNSアイコン（assets側・SVG）
+- `assets/img/icons/ig.svg`
+- `assets/img/icons/fb.svg`
