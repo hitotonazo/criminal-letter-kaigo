@@ -31,3 +31,5 @@
 ### SNSアイコン（assets側・SVG）
 - `assets/img/icons/ig.svg`
 - `assets/img/icons/fb.svg`
+
+- `pages/director.png`（推奨 1600×720）※施設長紹介ページ

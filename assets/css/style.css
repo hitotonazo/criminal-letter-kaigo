@@ -366,3 +366,28 @@ small{color:var(--muted)}
   .seasonCard img{height:180px}
   .pageHeroImg{height:220px}
 }
+
+/* === Notice / Alert === */
+.alertBar{
+  background: rgba(220, 53, 69, .10);
+  border-bottom: 1px solid rgba(220, 53, 69, .25);
+}
+.alertBar .container{
+  padding: 12px 20px;
+}
+.alertText{
+  color: #b4232a;
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.alertBox{
+  background: rgba(220, 53, 69, .08);
+  border: 1px solid rgba(220, 53, 69, .25);
+  border-radius: 14px;
+  padding: 12px 14px;
+  color: #b4232a;
+  font-weight: 900;
+  line-height: 1.7;
+  font-size: 13px;
+}
